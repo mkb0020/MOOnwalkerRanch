@@ -178,19 +178,37 @@
       transform: scale(0.8);
     }
 
+
+/* ============================ TIP JAR ============================ */
+        #kofi-float {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            z-index: 20;
+            cursor: pointer;
+        }
+
+        #kofi-float img {
+            width: 64px; 
+            height: auto;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+      #kofi-float:hover img,
+      #kofi-float:active img {
+          transform: scale(1.1);
+      }
+
+
     @media (max-width: 900px) {
       #scroll-top,
       .floating-back-to-top {
         display: none !important;
       }
 
-      #kofi-float {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 20;
-        transform: scale(0.75); 
-      }
+
 
       .title { font-size: 2rem; }
       .stats { 
