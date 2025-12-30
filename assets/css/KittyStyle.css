@@ -590,10 +590,10 @@ body, html {
         }
 /* ============================ TIP JAR ============================ */
         #kofi-float {
-            position: fixed;
-            bottom: 15px;
+            position: absolute;
+            top: 80px;
             left: 15px;
-            z-index: 1000;
+            z-index: 100;
             cursor: pointer;
         }
 
