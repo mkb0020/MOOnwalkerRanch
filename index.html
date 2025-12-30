@@ -186,7 +186,7 @@
 
       #kofi-float {
         position: absolute;
-        top: 15px;
+        top: 10px;
         left: 10px;
         z-index: 20;
         transform: scale(0.75); 
@@ -326,35 +326,16 @@
   <div id="kofi-float">
     <a href="https://ko-fi.com/mkb0020" target="_blank" rel="noopener noreferrer">
       <img src="assets/images/tipjar.png" alt="Support me on Ko-fi">
-      <div class="hearts">
-        <div class="heart" style="--delay: 0s; --drift: -20px;">❤️</div>
-        <div class="heart" style="--delay: 0.5s; --drift: 15px;">💖</div>
-        <div class="heart" style="--delay: 1s; --drift: -10px;">💕</div>
-        <div class="heart" style="--delay: 1.5s; --drift: 20px;">❤️</div>
-        <div class="heart" style="--delay: 2s; --drift: -15px;">💗</div>
-        <div class="heart" style="--delay: 2.5s; --drift: 10px;">💖</div>
-      </div>
+
     </a>
   </div>
 
-  <!-- SCROLL TO TOP -->
-  <div id="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-    <a href="javascript:void(0);" class="button-container" aria-label="Scroll to top">
-      <img src="assets/images/top.png" alt="Scroll to top">
-    </a>
-  </div>
+
 
   <script src="js/KittyCore.js"></script>
 
   <script>
-    const button = document.getElementById('kofi-float');
-    button.addEventListener('mouseenter', () => {
-      document.querySelectorAll('.heart').forEach(h => {
-        h.style.animation = 'none';
-        h.offsetHeight;
-        h.style.animation = null;
-      });
-    });
+
 
     const starsDiv = document.getElementById('stars');
     for (let i = 0; i < 200; i++) {
